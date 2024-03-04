@@ -13,7 +13,7 @@ defineProps({
 id and send it to the routing index.js -->
 <template>
   <RouterLink class="event-link" 
-  :to="{name: 'event-details', params: { id: event.id} }">
+  :to="{name: 'EventDetails', params: { id: event.id} }">
     <div class="event-card">
       <!-- Display event data -->
       <h2>{{ event.title }}</h2>
