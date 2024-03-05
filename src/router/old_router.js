@@ -21,7 +21,7 @@ const router = createRouter({
       path: '/event/:id',
       name: 'event-details',
       props: true,      // this eanbles to send info to child components
-      component: () => import('../views/EventDetailsView.vue')
+      component: () => import('../views/event/Details.vue')
     },
 
   ]
