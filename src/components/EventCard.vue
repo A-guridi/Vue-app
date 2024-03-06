@@ -35,7 +35,7 @@ id and send it to the routing index.js -->
   box-shadow: 0 3px 12 px 0 rgba(0, 0, 0, 0.2);
  }
  .event-link {
-  color: #2c3e50;
+  color: #4f89c4;
   text-decoration: none;
  }
 

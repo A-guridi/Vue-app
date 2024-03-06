@@ -15,7 +15,8 @@ const GStore = inject('GStore')   // retrieve the global store
       <div class="wrapper">
         <nav>
           <RouterLink :to="{name: 'EventList'}">Events</RouterLink> |
-          <RouterLink :to="{name: 'About'}">About</RouterLink>
+          <RouterLink :to="{name: 'About'}">About</RouterLink> |
+          <RouterLink :to="{name: 'Todo'}">Todo</RouterLink>
         </nav>
       </div>
     </header>
@@ -30,14 +31,14 @@ const GStore = inject('GStore')   // retrieve the global store
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #4479ad;
 }
 nav {
   padding: 30px;
 }
 nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: #5591cd;
 }
 nav a.router-link-exact-active {
   color: #42b983;

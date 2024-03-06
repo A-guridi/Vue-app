@@ -8,6 +8,7 @@ import EventRegister from '@/views/event/Register.vue'
 import EventEdit from '@/views/event/Edit.vue'
 import NotFound from '@/views/NotFound.vue'
 import NProgress from 'vue-nprogress'
+import Todo from '@/views/Todo.vue'
 
 const nprogress = new NProgress()
 
@@ -42,6 +43,12 @@ const routes = [
         meta: { requireAuth: true}   // to require authentication, this is inherited to children components
       }
     ]
+  },
+  {
+    path: '/todo',
+    name: 'Todo',
+    component: Todo,
+    props: (route) => ({ page: parseInt(route.query.page || 1) })
   },
   // error handling routes
   {

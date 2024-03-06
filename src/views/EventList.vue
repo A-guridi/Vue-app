@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import EventCard from '@/components/EventCard.vue';
 import EventService from '@/services/EventService.js'
 import { ref, onMounted, computed, watchEffect } from 'vue'
@@ -62,12 +62,13 @@ onMounted(() => {
 .pagination {
   display: flex;
   width: 290px;
+  color: #5f94c9;
 }
 
 .pagination a {
   flex: 1;
   text-decoration: none;
-  color: #2c3e50;
+  color: #5f94c9;
 }
 
 #page-prev {
